@@ -1,31 +1,82 @@
+# Ví dụ 1 qua thương cô nàng khéo nướng bánh-bông-lan
+
+S -> NP VP
+VP -> VB NP
+VP -> VP NP
+VP -> ADV VB
+NP -> PRP PRP
+NP -> NP VP
+
+NP -> qua
+PRP -> cô
+PRP -> nàng
+NP -> bánh-bông-lan
+VB -> thương
+VB -> nướng
+ADV -> khéo
+
+# Ví dụ 2 tiếng mưa còn vương kỷ-niệm
+
+S -> NP VP
+NP -> UN NN
+VP -> VP NP
+VP -> ADV VB
+
+UN -> tiếng
+NN -> mưa
+ADV -> còn
+VB -> vương
+NP -> kỷ-niệm
+
+# Ví dụ 3 tiếng thét bên ngoài xé đám mây
+
+S -> NP VP
+NP -> UN NN
+NP -> NP PP
+PP -> IN NP
+VP -> VB NP
+
+UN -> tiếng
+UN -> đám
+NN -> thét
+IN -> bên
+NP -> ngoài
+NN -> mây
+VB -> xé
+
+
+
 # dua be nhin dan chim dang bay
 
 S -> NP VP
-NP -> N N
+NP -> NN NN
 NP -> NP VP
-VP -> V NP
-VP -> Adv V
-N -> dua
-N -> be
-N -> dan
-N -> chim
-V -> nhin
-V -> bay
-Adv -> dang
+VP -> VB NP
+VP -> ADV VB
+
+NN -> dua
+NN -> be
+NN -> dan
+NN -> chim
+VB -> nhin
+VB -> bay
+ADV -> dang
 
 # nó vừa gặp mấy người bạn trường cũ
+
 S -> NP VP
-NP -> nó
-NP -> N N
-NP -> N Adj
-NP -> Adj NP
+NP -> NN NN
+NP -> NN JJ
+NP -> JJ NP
 NP -> NP NP
-VP -> VP NP
 NP -> Q NP
-N -> người
-N -> bạn
-N -> trường
-V -> gặp
-Adv -> vừa
+VP -> VP NP
+
+NP -> nó
+NN -> người
+NN -> bạn
+NN -> trường
+VB -> gặp
+ADV -> vừa
 Q -> mấy
-Adj -> cũ
+JJ -> cũ
