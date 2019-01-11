@@ -12,20 +12,22 @@
   <link href="app.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="grammar.js" type="text/javascript"></script>
   <script src="lib.js" type="text/javascript"></script>
   <script src="app.js" type="text/javascript"></script>
   <script src="cky.js" type="text/javascript"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-      $.get('grammar.txt', function(data) {
-        $('#grammar').val(data);
-      })
-
-      $('#input_text').val('nó vừa gặp mấy người bạn trường cũ')
+      // $.get('grammar.txt', function(data) {
+      //   $('#grammar').val(data);
+      // })
+      $('#grammar').val(data)
+      $('#input_text').val('qua thương cô nàng khéo nướng bánh-bông-lan')
 
       $('#submit').click(function() {
         var grammar_val = $('#grammar').val()
         var input_text_val = $('#input_text').val()
+        input_text_val = input_text_val.trim()
         do_parse(grammar_val, input_text_val);
         render_tree(grammar_val, input_text_val, 'tree_output')
         

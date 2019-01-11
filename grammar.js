@@ -1,3 +1,4 @@
+var data = `
 # Ví dụ 1 qua thương cô nàng khéo nướng bánh-bông-lan
 
 S -> NP VP
@@ -13,6 +14,7 @@ PRP -> nàng
 NP -> bánh-bông-lan
 VB -> thương
 VB -> nướng
+VP -> nướng
 ADV -> khéo
 
 # Ví dụ 2 tiếng mưa còn vương kỷ-niệm
@@ -192,3 +194,4 @@ VB -> gặp
 ADV -> vừa
 Q -> mấy
 JJ -> cũ
+`

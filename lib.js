@@ -1,10 +1,10 @@
 function unique(names) {
-  console.log('BEFORE:', names)
+  // console.log('BEFORE:', names)
   var uniqueNames = [];
   $.each(names, function(i, el){
       if($.inArray(el, uniqueNames) === -1) uniqueNames.push(el);
   });
-  console.log('AFTER :', uniqueNames)
+  // console.log('AFTER :', uniqueNames)
   return uniqueNames;
 }
 
@@ -76,7 +76,7 @@ function Grammar(grammar) {
 
     a.unshift(0)
 
-    console.log('split_a', a)
+    // console.log('split_a', a)
 
     // if (a == null) {
     //   throw "bad rule syntax: " + r;
@@ -178,7 +178,11 @@ function cky_offline(grammar, sentence, eh) {
 
               merge_arrays(nt, rhss);
               eh.found_match(N - 1 - i, x, N - 1 - y, i - 1);
+              if (x == N - 1 && y == 0) {
+                nt = nt.filter(x => x=="S")
+              }
               eh.cell_updated(N - 1 - y, x, nt);
+              
             }
           }
         }
