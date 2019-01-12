@@ -47,6 +47,8 @@ function set_entry_content(i, j, content) {
   var cell = entry2cell(i, j);
   // xx
   content = content + '<small>('+ i + ', ' + j +')</small>'
+  // content = content.replace(/,/g, ', ')
+  // content = content.replace(/S/g, '<span style="color:red">S</span>')
   cell.innerHTML = content;
 }
 
@@ -55,7 +57,17 @@ function entry2cell(i, j) {
 }
 
 function do_parse(grammar_val, input_text_val) {
-  var cky_event_handler = new Object();
+  _update_actions = new Array();
+  _update_action_idx = 0;
+
+  _active_cell = [-1, -1];
+  _context_cells = [-1, -1, -1, -1];
+
+  _update_timer_id = -1;
+
+  _is_animation_running = false;
+
+  cky_event_handler = new Object();
 
   cky_event_handler.start = function (s) {
     create_chart(s);
@@ -76,8 +88,8 @@ function do_parse(grammar_val, input_text_val) {
   }
 
   cky_event_handler.cell_updated = function (i, j, content) {
-    // console.log(content)
     // content = content + '('+ i + ', ' + j +')'
+    // console.log('xxxxx', content)
     _update_actions.push("paint_cell(" + i + "," + j + ",COLOR_ACTIVE_CELL);" +
       "set_entry_content(" + i + "," + j + ",\"" + content + "\");");
     _update_actions.push("--");

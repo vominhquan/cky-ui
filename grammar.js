@@ -9,6 +9,8 @@ NP -> PRP PRP
 NP -> NP VP
 
 NP -> qua
+NP -> cô
+NP -> nàng
 PRP -> cô
 PRP -> nàng
 NP -> bánh-bông-lan
@@ -41,6 +43,7 @@ VP -> VB NP
 UN -> tiếng
 UN -> đám
 NN -> thét
+VB -> thét
 IN -> bên
 NP -> ngoài
 NN -> mây
@@ -51,6 +54,7 @@ VB -> xé
 S -> NP VP
 NP -> UN NP
 NP -> NP JJ
+NP -> NP PP
 PP -> IN NP
 VP -> VB PP
 
@@ -61,6 +65,7 @@ JJ -> xinh
 JJ -> biếc
 IN -> trong
 VB -> thì-thào
+VP -> thì-thào
 
 
 # Ví dụ 5 ﻿trời xui tan-vỡ tình đôi lứa
@@ -75,8 +80,10 @@ NP -> trời
 NP -> tình
 NP -> lứa
 VB -> tan-vỡ
+VP -> tan-vỡ
 Q -> đôi
 VM -> xui
+VB -> xui
 
 
 # Ví dụ 6 ﻿trăng sáng soi đôi má gầy
@@ -85,10 +92,13 @@ S -> NP VP
 NP -> NP JJ
 NP -> Q NP
 VP -> VB NP
+VP -> VP ADV 
 
 NP -> trăng
 NP -> má
+ADV -> sáng
 VB -> soi
+VP -> soi
 Q -> đôi
 JJ -> sáng
 JJ -> gầy
@@ -158,40 +168,4 @@ VP -> nghe
 IN -> trên
 JJ -> quen
 JJ -> nồng-nàn
-
-
-# dua be nhin dan chim dang bay
-
-S -> NP VP
-NP -> NN NN
-NP -> NP VP
-VP -> VB NP
-VP -> ADV VB
-
-NN -> dua
-NN -> be
-NN -> dan
-NN -> chim
-VB -> nhin
-VB -> bay
-ADV -> dang
-
-# nó vừa gặp mấy người bạn trường cũ
-
-S -> NP VP
-NP -> NN NN
-NP -> NN JJ
-NP -> JJ NP
-NP -> NP NP
-NP -> Q NP
-VP -> VP NP
-
-NP -> nó
-NN -> người
-NN -> bạn
-NN -> trường
-VB -> gặp
-ADV -> vừa
-Q -> mấy
-JJ -> cũ
 `

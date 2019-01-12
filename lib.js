@@ -173,7 +173,7 @@ function cky_offline(grammar, sentence, eh) {
               if (nt == null) {
                 nt = new Array();
                 C[N - 1 - y][x] = nt;
-                console.log(nt)
+                // console.log(nt)
               }
 
               merge_arrays(nt, rhss);
