@@ -1,5 +1,8 @@
 var data = `
 # Ví dụ 1 qua thương cô nàng khéo nướng bánh-bông-lan
+# Biến thể 1 qua thương bánh-bông-lan cô nàng nướng
+# Biến thể 2 qua thương đôi má cô nàng khéo nướng bánh-bông-lan
+# Biến thể 3 qua thương cô nướng bánh-bông-lan
 
 S -> NP VP
 VP -> VB NP
@@ -20,6 +23,9 @@ VP -> nướng
 ADV -> khéo
 
 # Ví dụ 2 tiếng mưa còn vương kỷ-niệm
+# Biến thể 1 tiếng mưa còn vương kỷ-niệm cuộc tình
+# Biến thể 2 tiếng mưa bên ngoài còn vương kỷ-niệm
+# Biến thể 3 kỷ-niệm còn vương trên tiếng mưa  
 
 S -> NP VP
 NP -> UN NN
@@ -33,6 +39,8 @@ VB -> vương
 NP -> kỷ-niệm
 
 # Ví dụ 3 tiếng thét bên ngoài xé đám mây
+# Biến thể 1 tiếng thét xé đám mây bên ngoài
+# Biến thể 2 tiếng thét bên ngoài còn xé đám mây
 
 S -> NP VP
 NP -> UN NN
@@ -50,6 +58,9 @@ NN -> mây
 VB -> xé
 
 # Ví dụ 4 cơn gió xinh thì-thào trong lá biếc
+# Biến thể 1 cơn gió xinh lại thét trong lá biếc
+# Biến thể 2 cơn gió xinh trong lá biếc thì-thào
+# Biến thể 3 cơn gió xinh thì-thào tình đôi lứa
 
 S -> NP VP
 NP -> UN NP
@@ -67,8 +78,10 @@ IN -> trong
 VB -> thì-thào
 VP -> thì-thào
 
-
 # Ví dụ 5 ﻿trời xui tan-vỡ tình đôi lứa
+# Biến thể 1 ﻿trời xui tan-vỡ cuộc tình anh em
+# Biến thể 2 ﻿trời lại xui tan-vỡ cuộc tình
+# Biến thể 3 cuộc tình đôi lứa tan-vỡ
 
 S -> NP VP
 NP -> NP NP
@@ -85,8 +98,10 @@ Q -> đôi
 VM -> xui
 VB -> xui
 
-
 # Ví dụ 6 ﻿trăng sáng soi đôi má gầy
+# Biến thể 1 ﻿trăng soi sáng đôi má
+# Biến thể 2 ﻿trăng bên ngoài soi đôi má xinh
+# Biến thể 3 ﻿trăng soi đôi má cô nàng xinh
 
 S -> NP VP
 NP -> NP JJ
@@ -103,15 +118,16 @@ Q -> đôi
 JJ -> sáng
 JJ -> gầy
 
-
 # Ví dụ 7 lá rơi đắp mộ cuộc tình
+# Biến thể 1 anh đắp mộ em
+# Biến thể 2 trăng sáng soi mộ cuộc tình
+# Biến thể 3 lá rơi trên má em gầy
 
 S -> NP VP
 NP -> UN NN
 NP -> NP NP
 VP -> VB VP
 VP -> VB NP
-
 
 UN -> cuộc
 NN -> tình
@@ -121,6 +137,10 @@ VB -> rơi
 VB -> đắp
 
 # Ví dụ 8 đoàn thuyền đánh cá lại ra khơi
+# Biến thể 1 trăng soi đoàn thuyền đánh cá ra khơi
+# Biến thể 2 đoàn thuyền ra khơi đánh cá
+# Biến thể 3 anh ra thuyền nướng cá
+# Biến thể 4 đoàn thuyền đánh cá ra khơi đánh cá
 
 S -> NP VP
 NP -> UN NP
@@ -137,6 +157,9 @@ VB -> đánh
 ADV -> lại
 
 # Ví dụ 9 em theo anh về xứ Cạnh-Đền 
+# Biến thể 1 em anh về xứ Cạnh-Đền 
+# Biến thể 2 em về xứ Cạnh-Đền theo anh
+# Biến thể 3 em theo anh về xứ Cạnh-Đền kỷ-niệm
 
 S -> NP VP
 NP -> NN NNP
@@ -150,8 +173,10 @@ VB -> theo
 VB -> về
 NNP -> Cạnh-Đền
 
-
 # Ví dụ 10 anh nghe mùi hương trên tóc quen nồng-nàn
+# Biến thể 1 anh nghe mùi hương nồng-nàn trên tóc quen
+# Biến thể 2 anh nghe mùi trên tóc em
+# Biến thể 3 anh nghe mùi hương vương trên tóc quen
 
 S -> NP VP
 VP -> VB NP
